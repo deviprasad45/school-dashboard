@@ -1,0 +1,45 @@
+<div class="dashboard-layout">
+
+  <aside class="sidebar">
+
+    <h3>
+      {{ translation.translate('DASHBOARD') }}
+    </h3>
+
+    <nav>
+
+      <a
+        routerLink="overview"
+        routerLinkActive="active">
+
+        {{ translation.translate('OVERVIEW') }}
+
+      </a>
+
+      <a
+        routerLink="analytics"
+        routerLinkActive="active">
+
+        {{ translation.translate('ANALYTICS') }}
+
+      </a>
+
+      <a
+        routerLink="activity"
+        routerLinkActive="active">
+
+        {{ translation.translate('ACTIVITY') }}
+
+      </a>
+
+    </nav>
+
+  </aside>
+
+  <section class="dashboard-content">
+
+    <router-outlet />
+
+  </section>
+
+</div>
